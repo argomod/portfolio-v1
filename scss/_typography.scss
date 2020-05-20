@@ -1,0 +1,127 @@
+/*
+ * Variables
+ */
+
+/* Spacing */
+$line-height: 1.5;
+$vertical-spacer: 1rem * ($line-height);
+
+/* Base Settings */
+$base-font-family: 'GT America', sans-serif;
+$heading-font-family: 'GT America Condensed', sans-serif;
+
+$default-text-color: #000000;
+$link-color: #999999;
+//Use as opacity!
+$text-lighten: 0.38;
+
+
+/*
+ * Modifiers
+ */
+
+.text-lighten     { opacity: $text-lighten; }
+.text-invisible   { color: rgba(0,0,0,0) !important; }
+.text-light-grey  { color: $light-grey; }
+.text-black       { color: #000000; }
+.text-left        { text-align: left   !important; }
+.text-center      { text-align: center !important; }
+.text-right       { text-align: right  !important; }
+
+
+
+/*
+ * Typography
+ */
+
+/* Font Choices */
+html, body                         { color: $default-text-color; font-family: $base-font-family; }
+.small-text                        { font-family: $base-font-family; }
+.caption-text                      { @extend .small-text; opacity: $text-lighten; }
+body                               { line-height: $line-height !important; }
+.h1, h1, .h3, h3, .h2, h2, .h4, h4 { font-family: $heading-font-family; }
+
+
+/* Font Sizes */
+.small-text { font-size: 0.75em; }
+.h4, h4     { font-size: 1rem; }
+.h3, h3     { font-size: 1.333rem; }
+.h2, h2     { font-size: 1.777rem; }
+.h1, h1     { font-size: 2.369rem; }
+@media (min-width: 768px) { .h1, h1 { font-size: 3.157rem; } }
+
+
+/* Typography rules */
+.typography {
+  h1, .h1, h2, .h2, h3, .h3, h4, .h4 { margin: 0 0 calc(((#{$line-height})*1em)/2); }
+  p, ul, ol, pre, ol li              { margin: 0 0 1rem; }
+  .small-text                        { margin: 0 0 1rem; }
+}
+
+
+/* Responsive Typography */
+
+// Default
+html { font-size: 16px; }
+// Small
+@media (min-width: 576px) { html { font-size: 17px; } }
+// Medium
+@media (min-width: 768px) { html { font-size: 18px; } }
+// Large
+@media (min-width: 992px) { html { font-size: 19px; } }
+// X-Large
+@media (min-width: 1200px) { html { font-size: 19px; } }
+
+
+/* Links */
+
+//All Links
+a { @include transitions(opacity, 150ms); color: inherit; }
+
+// Underline links
+p, ol li { a, a:hover, a:focus, a:active { text-decoration: underline !important; } }
+
+// Non-Underline Links
+h1, h2, h3, h4, ul li { a:hover { opacity: $text-lighten; } }
+a.no-underline:hover { opacity: $text-lighten; }
+a.no-underline, a.no-underline:hover, a.no-underline:active, a.no-underline:visited { text-decoration: none !important; }
+
+
+/* Lists */
+ol {
+  list-style-type: none;
+  counter-reset: li-counter;
+  padding-left: 1em;
+}
+ol > li{
+  position: relative;
+  padding-left: 0.5em;
+}
+ol > li:before {
+  position: absolute;
+  top: 0;
+  left: -1em;
+  width: 0.8em;
+  content: counter(li-counter) ".";
+  counter-increment: li-counter;
+}
+
+
+/*
+ * Fonts
+ */
+
+@font-face {
+    font-family: 'GT America';
+    src: url('/fonts/GTAmerica-Regular.woff2') format('woff2'),
+         url('/fonts/GTAmerica-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GT America Condensed';
+    src: url('/fonts/GTAmerica-CondensedBold.woff2') format('woff2'),
+         url('/fonts/GTAmerica-CondensedBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}

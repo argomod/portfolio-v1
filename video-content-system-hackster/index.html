@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56977823-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-56977823-2');
+  </script>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/styles.css?v=1.0"/>
+  <title>Video content system for Hackster | Matt Argo</title>
+  <meta name="description" content="I designed a video content system to store, organize, and display video content on our site.">
+  <link rel="shortcut icon" href="/assets/favicon.png" type="image/png">
+</head>
+
+<body class="project-2-background">
+
+<!-- Full height intro -->
+<div class="full-height-hero container-fluid d-flex flex-column justify-content-between padding-bottom-2 typography project-2-background">
+  <!-- Navigation -->
+  <nav class="padding-top-1 padding-bottom-1">
+    <ul class="d-flex justify-content-end align-items-end">
+      <li style="margin-right: auto;"><h4><a href="/">Matt Argo</a></h4></li>
+      <li class="small-text"><a href="/about">About</a></li>
+      <li class="small-text"><a href="/#project-0">Projects</a></li>
+    </ul>
+  </nav>
+  <div>
+    <h2 class="text-center">Hackster shares videos on Facebook & YouTube. To display them on their own website, I designed a video upload system & a new card for the home page.</h2>
+    <p class="caption-text text-center">UX/UI</p>
+  </div>
+  <div></div>
+  <div class="mobile-bar-space"></div>
+</div>
+
+<!-- Start of main content -->
+<div class="main-content container-fluid project-2-background">
+  <!-- Section 1 -->
+  <div class="animate row justify-content-center typography">
+    <div class="col-md-8">
+      <h3>The viewing experience</h3>
+      <p>Because different videos are hosted on Facebook and YouTube, the design needed to be platform-independent.</p>
+      <p>Working with the dev team to understand their limits in respect to our deadline, I opted to use an embed system for displaying the videos – this allowed us to keep users on our site without needing to host videos ourselves.</p>
+      <p>The embed type changes to autoplay only on desktop-sized screens. A dark, cinematic background fills the screen with a title, author, and description below.</p>
+    </div>
+  </div>
+  <div class="animate row justify-content-center align-items-center margin-top-1">
+    <div class="col-md-8">
+      <img src="/assets/hackster-video-embed.png"/>
+      <p class="caption-text margin-top-1">Desktop  mockup of YouTube video embed</p>
+    </div>
+  </div>
+
+  <!-- Section 2 -->
+  <div class="animate row justify-content-center padding-top-4 typography">
+    <div class="col-md-8">
+      <h3>Building a backend</h3>
+      <p>The biggest challenge was building an easy to use backend for uploading and displaying video content. I opted to split the system in two: one for storing videos and one for displaying videos. Hackster envisioned using video content for future products, so having a single database to select from eliminated redundancy.</p>
+      <p>The first system I designed keeps a database of all the videos Hackster will want to use. Each video is uploaded with a link to YouTube or Facebook, basic information, and tags for future use – just in case.</p>
+      <p>The second system allows admins to select videos to display in a featured videos section. Items can be selected, rearranged, and edited swiftly. I also included a button to take admins to the first system just in case they forgot to upload a video (a popular feature).</p>
+      <p class="margin-top-1"><a target=”_blank” href="https://invis.io/UAJL57YHYN4">Check out the prototype</a></p>
+    </div>
+  </div>
+
+
+  <div class="animate row justify-content-center align-items-center">
+    <div class="col-md-8 margin-top-1">
+      <img src="/assets/hackster-video-upload-system.png"/>
+      <p class="caption-text margin-top-1">Samples of my video database system & video display system designs</p>
+    </div>
+    <div class="col-md-8 margin-top-2">
+      <img src="/assets/hackster-video-upload-system-prototype.png"/>
+      <p class="caption-text margin-top-1">A monster prototype I made for the development team</p>
+    </div>
+  </div>
+
+   <!-- Section 3 -->
+  <div class="animate row justify-content-center padding-top-4 typography">
+    <div class="col-md-8">
+      <h3>Displaying videos</h3>
+      <p>I designed a new card to show the videos on our home page. The style matches the existing cards used for other types of content. A play button indicates the content is a video and the sizing aligns with a 12 column grid.</p>
+    </div>
+  </div>
+  <div class="animate row justify-content-center align-items-center">
+    <div class="col-md-10 margin-top-1">
+      <img src="/assets/hackster-video-cards.png"/>
+      <p class="caption-text margin-top-1">Mockup of a row of video cards</p>
+    </div>
+  </div> 
+
+  <!-- Project details -->
+  <div class="padding-top-4">
+    <hr>
+    <div class="animate row justify-content-center padding-top-2">
+      <div class="col-md-4 typography margin-top-1">
+        <h4>Timeframe</h4>
+        <p>2.5 weeks</p>
+      </div>
+      <div class="col-md-4 typography margin-top-1">
+        <h4>Team</h4>
+        <p>Me, another UX designer, project manager, and the dev team</p>
+      </div>
+    </div>
+    <div class="animate row justify-content-center padding-bottom-2">
+      <div class="col-md-4 typography margin-top-1">
+        <h4>Functions</h4>
+        <p>UX/UI, graphic design</p>
+      </div>
+      <div class="col-md-4 typography margin-top-1">
+        <h4>Process</h4>
+        <p>Design in Sketch, prototype in Invision, handoff to dev team</p>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+</div>
+
+
+<!-- End of main content -->
+
+<!-- Footer -->
+<footer class="container-fluid project-2-background d-flex flex-column justify-content-center align-items-center typography">
+  <p>Send me an <a href="mailto:mattargomaniz@gmail.com">email</a></p>
+  <p>Follow me on <a target=”_blank” href="https://www.instagram.com/margomaniz/?hl=en">the gram</a></p>
+  <p class="margin-top-1 small-text text-lighten">Site built by yours truly in 2020.</p>
+</footer>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="/js/jquery.min.js" ></script>
+<script src="/js/bootstrap.min.js" ></script>
+<script src="/js/jquery.waypoints.min.js" ></script>
+
+<!-- Fade in animations -->
+<script>
+  $('.animate').each(function(){
+    var self = $(this);
+    $(this).waypoint({
+      handler: function(direction) {
+        if (direction == 'down') {
+          self.addClass('visible');
+        }
+      },
+      offset:'80%'
+    });
+    $(this).waypoint({
+      handler: function(direction) {
+        if (direction == 'up') {
+          self.removeClass('visible');
+        }
+      },
+      offset:'100%'
+    })
+  })
+</script>
+
+
+</body>
+
+</html>

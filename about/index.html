@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56977823-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-56977823-2');
+  </script>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/styles.css?v=1.0"/>
+  <title>I’m Matt Argomaniz, a UX/UI designer living in Portland, OR.</title>
+  <meta name="description" content="Read a little about me.">
+  <link rel="shortcut icon" href="/assets/favicon.png" type="image/png">
+</head>
+
+<body class="black-background">
+
+<!-- Full height intro -->
+<div class="full-height-hero container-fluid d-flex flex-column justify-content-between padding-bottom-2 typography black-background">
+  <!-- Navigation -->
+  <nav class="padding-top-1 padding-bottom-1">
+    <ul class="d-flex justify-content-end align-items-end">
+      <li style="margin-right: auto;" class="text-light-grey"><h4><a href="/">Matt Argo</a></h4></li>
+      <li class="small-text text-light-grey"><a href="/#project-0">Projects</a></li>
+    </ul>
+  </nav>
+  <div class="row justify-content-center align-items-center">
+    <div class="col-12 col-sm-6 col-lg-8 mobile-margin-top-2">
+      <h2 class="text-light-grey">I’m Matt, a digital product designer living in Portland, OR. I love working with passionate folks & companies whose purpose extends beyond what they sell.</h2>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 mobile-margin-top-2">
+      <img src="/assets/matt-argo-2.jpeg" alt="A sunny day in Portland with me and Hank, my foster chihuahua."/>
+    </div>
+  </div>
+  <div></div>
+  <div class="mobile-bar-space"></div>
+</div>
+
+
+<!-- Start of main content -->
+<div class="main-content container-fluid black-background">
+
+  <!-- Content -->
+  <div class="row padding-bottom-2 justify-content-center">
+    <div class="col-md-8 padding-top-2 typography">
+      <p class="animate text-light-grey">I specialize in user experience and user interface design. Or in other words, I design beautifully functional applications for screens. My process involves posing questions to users and stakeholders, gathering data, collaborating, pitching, iterating, prototyping, and building.</p>
+      <p class="animate text-light-grey">I am especially passionate about inclusive design, accessibility, and the intersection of design + development. I am also an evironmentalist and believe good design can help mitigate our climate crisis.</p>
+      <p class="animate text-light-grey">I’m always down to collaborate or just chat. Send me an <a href="mailto:mattargomaniz@gmail.com">email</a>.</p>
+    </div>
+  </div>
+  <hr style="background-color: rgba(255, 255, 255, 0.08);">
+</div>
+
+
+
+<!-- End of main content -->
+
+<!-- Footer -->
+<footer class="container-fluid black-background d-flex flex-column justify-content-center align-items-center typography">
+  <p class="text-light-grey">Send me an <a href="mailto:mattargomaniz@gmail.com">email</a></p>
+  <p class="text-light-grey">Follow me on <a target=”_blank” href="https://www.instagram.com/margomaniz/?hl=en">the gram</a></p>
+  <p class="margin-top-1 small-text text-light-grey text-lighten">Site built by yours truly in 2020.</p>
+</footer>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="/js/jquery.min.js" ></script>
+<script src="/js/bootstrap.min.js" ></script>
+<script src="/js/jquery.waypoints.min.js" ></script>
+
+<!-- Fade in animations -->
+<script>
+  $('.animate').each(function(){
+    var self = $(this);
+    $(this).waypoint({
+      handler: function(direction) {
+        if (direction == 'down') {
+          self.addClass('visible');
+        }
+      },
+      offset:'80%'
+    });
+    $(this).waypoint({
+      handler: function(direction) {
+        if (direction == 'up') {
+          self.removeClass('visible');
+        }
+      },
+      offset:'100%'
+    })
+  })
+</script>
+
+
+</body>
+
+</html>
