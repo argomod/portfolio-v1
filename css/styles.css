@@ -1977,11 +1977,11 @@ table {
 /* Font Choices */
 html, body {
   color: #000000;
-  font-family: "GT America", sans-serif;
+  font-family: "GT America Regular", sans-serif;
 }
 
 .small-text, .caption-text {
-  font-family: "GT America", sans-serif;
+  font-family: "GT America Regular", sans-serif;
 }
 
 .caption-text {
@@ -1993,7 +1993,7 @@ body {
 }
 
 .h1, h1, .h3, h3, .h2, h2, .h4, h4 {
-  font-family: "GT America Condensed", sans-serif;
+  font-family: "GT America Medium", sans-serif;
 }
 
 /* Font Sizes */
@@ -2068,11 +2068,11 @@ a {
   color: inherit;
 }
 
-p a, p a:hover, p a:focus, p a:active, ol li a, ol li a:hover, ol li a:focus, ol li a:active {
+p a, p a:hover, p a:focus, p a:active, ol li a, ol li a:hover, ol li a:focus, ol li a:active, .yes-underline a, .yes-underline a:hover, .yes-underline a:focus, .yes-underline a:active {
   text-decoration: underline !important;
 }
 
-h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, ul li a:hover {
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
   opacity: 0.38;
 }
 
@@ -2109,16 +2109,14 @@ ol > li:before {
  * Fonts
  */
 @font-face {
-  font-family: "GT America";
-  src: url("/fonts/GTAmerica-Regular.woff2") format("woff2"), url("/fonts/GTAmerica-Regular.woff") format("woff");
+  font-family: "GT America Regular";
+  src: url("/fonts/GT-America-Standard-Regular.woff2") format("woff2"), url("/fonts/GT-America-Standard-Regular.woff") format("woff");
   font-weight: normal;
-  font-style: normal;
 }
 @font-face {
-  font-family: "GT America Condensed";
-  src: url("/fonts/GTAmerica-CondensedBold.woff2") format("woff2"), url("/fonts/GTAmerica-CondensedBold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
+  font-family: "GT America Medium";
+  src: url("/fonts/GT-America-Standard-Medium.woff2") format("woff2"), url("/fonts/GT-America-Standard-Medium.woff") format("woff");
+  font-weight: medium;
 }
 /* Page container */
 .container-fluid {
@@ -2294,6 +2292,14 @@ nav li:not(:first-child) {
 }
 
 /* For every body */
+body {
+  -webkit-transition: background 200ms ease-in;
+  -moz-transition: background 200ms ease-in;
+  -ms-transition: background 200ms ease-in;
+  -o-transition: background 200ms ease-in;
+  transition: background 200ms ease-in;
+}
+
 .main-content {
   margin-bottom: 50vh;
   position: relative;

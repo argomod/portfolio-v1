@@ -80,6 +80,9 @@ nav { z-index: 3}
 nav li:not(:first-child){ padding-left: $grid-gutter-width }
 
 /* For every body */
+body {
+	@include transitions(background, 200ms);
+}
 .main-content {
 	margin-bottom: 50vh;
 	position: relative;
