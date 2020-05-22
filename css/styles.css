@@ -2292,7 +2292,7 @@ nav li:not(:first-child) {
 }
 
 /* For every body */
-body {
+html, body, .full-height-hero {
   -webkit-transition: background 200ms ease-in;
   -moz-transition: background 200ms ease-in;
   -ms-transition: background 200ms ease-in;
