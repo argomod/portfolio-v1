@@ -147,6 +147,7 @@ hr {
 
 .animate { opacity: 0; transform: translate(0, 0.5rem); @include transitions(all, 500ms); }
 .visible { opacity: 1 !important; transform: translate(0, 0); }
+.invisible {opacity:0}
 
 
 /* Video */

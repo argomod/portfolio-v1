@@ -2403,6 +2403,10 @@ hr {
   transform: translate(0, 0);
 }
 
+.invisible {
+  opacity: 0;
+}
+
 /* Video */
 video {
   width: 100%;
