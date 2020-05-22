@@ -33,9 +33,11 @@
       <li class="small-text yes-underline"><a href="/#project-0">Projects</a></li>
     </ul>
   </nav>
-  <div>
-    <h2 class="text-center">Hackster shares videos on Facebook & YouTube. To display them on their own website, I designed a video upload system & a new card for the home page.</h2>
-    <p class="caption-text text-center">UX/UI</p>
+  <div class="row justify-content-center typography">
+    <div class="col-12">
+    <h2>To display Hackster's Facebook & YouTube videos on our own website, I designed a video upload system & a new card for the home page.</h2>
+    <p class="caption-text">UX/UI</p>
+  </div>
   </div>
   <div></div>
   <div class="mobile-bar-space"></div>
@@ -131,7 +133,7 @@
 <footer class="container-fluid project-2-background d-flex flex-column justify-content-center align-items-center typography">
   <p class="text-center">Send me an <a href="mailto:mattargomaniz@gmail.com">email</a>.</p>
   <p class="text-center">Follow me on <a target=”_blank” href="https://www.instagram.com/margomaniz/?hl=en">the gram</a>.</p>
-  <p class="text-centermargin-top-1 small-text text-lighten">Site built by yours truly in 2020 – view the code on <a target=”_blank” href="https://github.com/argomod/portfolio-v1">Github</a>.</p>
+  <p class="text-center margin-top-1 small-text text-lighten">Site built by yours truly in 2020 – view the code on <a target=”_blank” href="https://github.com/argomod/portfolio-v1">Github</a>.</p>
 </footer>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -159,6 +161,9 @@
       },
       offset:'100%'
     })
+  });
+  $( document ).ready(function() {
+    $( "footer" ).addClass( "visible" );
   })
 </script>
 

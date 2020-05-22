@@ -2231,7 +2231,7 @@ ol > li:before {
 }
 
 .project-0-background {
-  background: #FEF2F8 !important;
+  background: #FDEEFF !important;
 }
 
 .project-1-background {
@@ -2252,7 +2252,7 @@ ol > li:before {
   }
 
   .project-0-home {
-    background: #FEF2F8 !important;
+    background: #FDEEFF !important;
   }
 
   .project-1-home {
@@ -2350,10 +2350,6 @@ footer {
 .super-secret-image img {
   max-height: 75vh;
   max-width: 50vw;
-}
-
-.super-secret-image-reveal {
-  cursor: pointer;
 }
 
 /* Lines between projects */

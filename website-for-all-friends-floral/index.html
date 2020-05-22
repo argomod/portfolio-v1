@@ -37,9 +37,11 @@
       <li class="small-text yes-underline"><a href="/#project-0">Projects</a></li>
     </ul>
   </nav>
-  <div>
-    <h2 class="text-center">All Friends Floral is a flower studio owned by Sabrina Crew. I designed & built a website to showcase her beautiful work, strong aesthetic, & friendly personality.</h2>
-    <p class="caption-text text-center">UX/UI, development, graphic design</p>
+  <div class="row justify-content-center typography">
+    <div class="col-12">
+    <h2>I designed & built a website to showcase All Friends Floral's beautiful work, strong aesthetic, & friendly personality.</h2>
+    <p class="caption-text">UX/UI, development, graphic design</p>
+  </div>
   </div>
   <div></div>
   <div class="mobile-bar-space"></div>
@@ -59,7 +61,7 @@
   <div class="animate row justify-content-center padding-top-4 typography">
     <div class="col-md-8">
       <h3>Organizing styles & components</h3>
-      <p>Careful planning made rapid prototyping much easier. I worked with Sabrina to choose typography and color palettes, as well as gather general inspiration. I used Sketch to organize all UI and typography documentation for easy reference. I also converted all reusable UI patterns into symbols.</p>
+      <p>Careful planning made rapid prototyping much easier. I worked with Sabrina, the owner of All Friends Floral, to choose typography and color palettes, as well as gather general inspiration. I used Sketch to organize all UI and typography documentation for easy reference. I also converted all reusable UI patterns into symbols.</p>
     </div>
   </div>
   <div class="animate row justify-content-center margin-top-1">
@@ -130,7 +132,7 @@
 <!-- End of main content -->
 
 <!-- Footer -->
-<footer class="container-fluid project-1-background d-flex flex-column justify-content-center align-items-center typography">
+<footer class="animate container-fluid project-1-background d-flex flex-column justify-content-center align-items-center typography">
   <p class="text-center">Send me an <a href="mailto:mattargomaniz@gmail.com">email</a>.</p>
   <p class="text-center">Follow me on <a target=”_blank” href="https://www.instagram.com/margomaniz/?hl=en">the gram</a>.</p>
   <p class="text-center margin-top-1 small-text text-lighten">Site built by yours truly in 2020 – view the code on <a target=”_blank” href="https://github.com/argomod/portfolio-v1">Github</a>.</p>
@@ -162,6 +164,9 @@
       },
       offset:'100%'
     })
+  });
+  $( document ).ready(function() {
+    $( "footer" ).addClass( "visible" );
   })
 </script>
 

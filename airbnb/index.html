@@ -33,9 +33,11 @@
       <li class="small-text yes-underline"><a href="/#project-0">Projects</a></li>
     </ul>
   </nav>
-  <div>
-    <h2 class="text-center">I was an Experience Designer at Airbnb focusing on our customer support products & internal design system.</h2>
-    <p class="caption-text text-center">UX/UI, accessibility design, design systems</p>
+  <div class="row justify-content-center typography">
+    <div class="col-12">
+    <h2>I was an Experience Designer at Airbnb focusing on our customer support products & internal design system.</h2>
+    <p class="caption-text">UX/UI, accessibility design, design systems</p>
+  </div>
   </div>
   <div></div>
   <div class="mobile-bar-space"></div>
@@ -76,7 +78,7 @@
 
    <!-- Section 4 -->
    <div class="animate row justify-content-center padding-top-4 typography">
-    <div class="col-md-8 caption-text text-center">
+    <div class="col-md-8 caption-text">
       <p>On May 4th, 2020, Airbnb was forced to lay off 25% of its workforce (including me) due to COVID-19, closing its Portland office in the process. I want to give a special thanks to my friends and colleagues who were affected.</p>
     </div>
   </div>
@@ -145,6 +147,9 @@
       },
       offset:'100%'
     })
+  });
+  $( document ).ready(function() {
+    $( "footer" ).addClass( "visible" );
   })
 </script>
 
